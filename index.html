@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Office</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b59ee4d191.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="phone"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;Phone: 000-123-4567</div>
+    <hr>
+    <header>
+        <div class="logo">
+            Law Office
+        </div>
+        <div class="mobileMenu">
+            <ul id="myLinks">
+                <li class="selected">Home</li>
+                <li>Jay Bianco</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <a href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></i></a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="#">Jay Bianco</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="jumbotron">
+        <div class="textDetail">
+            <h1>Lorem ipsum dummy text</h1>
+            <p>It is a long established fact that a reader will be
+                distracted by the readable content of a page
+                when looking at its layout.</p>
+            <input type="button" value="Contact Us">
+        </div>
+        <div class="consultation">
+            <div>
+                <h2>Free Consultation</h2>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Phone">
+                <select name="chargeType" id="chargeType">
+                    <option value="" disabled selected hidden>Select Your Type of Charge</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <input type="textarea" placeholder="Tell us about your case">
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label for="checkbox">I have read the disclaimer.</label>
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <main>
+        <h2>Law Office</h2>
+        <div class="contents">
+            <div class="buttons">
+                <span>Lorem Ipsum Dummy</span>
+                <span>Printing and type setting</span>
+                <span>Many desktop publishing</span>
+            </div>
+            <div class="details">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed repellat natus aliquam
+                    placeat quod aut dolore tempore? Incidunt voluptas minima et enim veritatis dolor, maiores itaque.
+                    Earum quo autem facere quas quia alias esse iusto deserunt ab optio, maxime reiciendis praesentium
+                    totam magnam quisquam exercitationem laudantium dolores quis dolore?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, consectetur laboriosam?
+                    Tempore, in totam eum non repellendus tenetur vitae inventore doloribus, soluta accusantium earum
+                    quia id eos ad distinctio error eveniet voluptas consequuntur veniam consequatur quibusdam minima!
+                    Ex nesciunt perspiciatis ipsum saepe, commodi sed facere vitae, neque, quis quae maiores.
+                </p>
+                <br>
+                <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* ############################## >= 1500px ############################## */
+body {
+    padding: 0px 190px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(./img/bigstock-Criminal-Arrested-And-Handcuff-239871538.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+div.phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 3px;
+}
+
+body hr {
+    position: absolute;
+    top: 30px;
+    width: 100vw;
+    left: 0;
+    opacity: 0.3;
+}
+
+/* #################### Header #################### */
+
+header {
+    padding: 36px 0px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+header div.logo {
+    font-size: 38px;
+    font-weight: 500;
+    flex: 1;
+}
+
+header ul {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    text-transform: uppercase;
+}
+
+header ul li {
+    margin: 0px 40px;
+}
+
+/* header ul li.selected::after {
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #11519c;
+    position: relative;
+    top: 15px;
+} */
+
+header ul li.selected {
+    border-bottom: 1px solid white;
+}
+
+header a {
+    display: none;
+}
+
+/* #################### Jumbotron #################### */
+
+div.jumbotron {
+    margin: 0;
+    padding-top: 188px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.jumbotron::after {
+    content: "";
+    height: inherit;
+    width: inherit;
+    background-color: #11519c;
+}
+
+div.jumbotron .textDetail {
+    width: 600px;
+}
+
+div.jumbotron .textDetail h1 {
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+div.jumbotron .textDetail p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+div.jumbotron .textDetail input {
+    font-size: 30px;
+    font-weight: 400;
+    height: 70px;
+    width: 290px;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #11519c;
+}
+
+div.jumbotron div.consultation {
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+}
+
+div.jumbotron div.consultation div {
+    height: 80px;
+    background-color: #11519c;
+}
+
+div.jumbotron div.consultation div h2 {
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+div.jumbotron div.consultation form {
+    display: flex;
+    /* height: 520px; */
+    margin: 25px 30px;
+    flex-direction: column;
+}
+
+div.jumbotron div.consultation form input,
+select {
+    margin: 5px 0;
+    height: 50px;
+    border-radius: 5px;
+}
+
+div.jumbotron div.consultation form input,
+select::placeholder,
+select {
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+div.jumbotron div.consultation form div.checkbox {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+div.jumbotron div.consultation form div.checkbox label {
+    margin: 10px;
+    color: #c4c4c4;
+}
+
+div.jumbotron div.consultation form input[type="submit"] {
+    font-size: 28px;
+    font-weight: 500;
+    color: #11519c;
+    border: 1px solid #11519c;
+    text-transform: uppercase;
+}
+
+/* #################### Main #################### */
+main {
+    margin: 100px 0;
+    padding: 0;
+    color: black;
+}
+
+main h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #11519c;
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+main h2::after {
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #11519c;
+    position: relative;
+    top: 15px;
+}
+
+main div.contents {
+    display: flex;
+    padding-top: 70px;
+}
+
+main div.contents div.buttons span {
+    width: 388px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    position: relative;
+    border: 2px solid #11519c;
+    background-color: #e0e0e0;
+    background-image: url(./img//Shape\ 1.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+main div.contents div.buttons span:nth-child(2) {
+    background-color: #11519c;
+    color: white;
+}
+
+main div.contents div.details {
+    padding-left: 44px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+main div.contents div.details p {
+    margin: 0;
+    line-height: 2;
+}
+
+main div.contents div.details a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #11519c;
+}
+
+/* ############################## >=992px ############################## */
+@media only screen and (min-width: 1366px) and (max-width: 1500px) {
+    body {
+        padding: 0 100px;
+    }
+
+    header a {
+        display: none;
+    }
+}
+
+/* ############################## >=768px ############################## */
+@media only screen and (min-width: 768px) and (max-width: 1365px) {
+    body {
+        padding: 0 100px;
+        background-image: url(./img/bigstock-Criminal-Arrested-And-Handcuff-2.png);
+    }
+
+    /* #################### Header #################### */
+    header div.logo {
+        font-size: 22px;
+        font-weight: 500;
+        flex: 1;
+    }
+
+    header ul {
+        list-style: none;
+        font-size: 16px;
+        font-weight: 300;
+        display: flex;
+        text-transform: uppercase;
+    }
+
+    header ul li {
+        margin: 0px 10px;
+    }
+
+    header a {
+        display: none;
+    }
+
+    /* #################### Jumbotron #################### */
+    div.jumbotron {
+        margin: 0;
+        padding-top: 88px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.jumbotron .textDetail {
+        width: 45%;
+    }
+
+    div.jumbotron .textDetail h1 {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    div.jumbotron .textDetail p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    div.jumbotron .textDetail input {
+        font-size: 20px;
+        font-weight: 400;
+        height: 50px;
+        width: 100%;
+        text-transform: uppercase;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        background-color: #11519c;
+    }
+
+    div.jumbotron div.consultation {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        background-color: #ededed;
+    }
+
+    div.jumbotron div.consultation div {
+        height: 50px;
+        background-color: #11519c;
+    }
+
+    div.jumbotron div.consultation div h2 {
+        margin-top: 12px;
+        margin-left: 2s0px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    div.jumbotron div.consultation form {
+        display: flex;
+        /* height: 520px; */
+        margin: 5px 10px;
+        flex-direction: column;
+    }
+
+    div.jumbotron div.consultation form input,
+    select {
+        margin: 5px 0;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    div.jumbotron div.consultation form input,
+    select::placeholder,
+    select {
+        padding-left: 10px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    div.jumbotron div.consultation form div.checkbox {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+
+    div.jumbotron div.consultation form div.checkbox label {
+        margin: 10px;
+        color: #c4c4c4;
+        font-size: 12px;
+    }
+
+    div.jumbotron div.consultation form input[type="submit"] {
+        font-size: 16px;
+        font-weight: 500;
+        color: #11519c;
+        border: 1px solid #11519c;
+        text-transform: uppercase;
+    }
+
+    /* #################### Main #################### */
+    main {
+        margin: 100px 0;
+        padding: 0;
+        color: black;
+    }
+
+    main h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #11519c;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    main h2::after {
+        content: "";
+        height: 2px;
+        width: 60px;
+        background-color: #11519c;
+        position: relative;
+        top: 15px;
+    }
+
+    main div.contents {
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    main div.contents div.buttons span {
+        width: 100%;
+        height: 65px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: relative;
+        border: 2px solid #11519c;
+        background-color: #e0e0e0;
+        background-image: url(./img//Shape\ 1.png);
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    main div.contents div.buttons span:nth-child(2) {
+        background-color: #11519c;
+        color: white;
+    }
+
+    main div.contents div.details {
+        padding-left: 0px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    main div.contents div.details p {
+        margin: 0;
+        line-height: 2;
+    }
+
+    main div.contents div.details a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #11519c;
+    }
+}
+
+/* ############################## <768px ############################## */
+@media only screen and (max-width: 767px) {
+    body {
+        padding: 0 10px;
+        background-image: url(./img/bigstock-Criminal-Arrested-And-Handcuff-30.png);
+    }
+
+    /* #################### Header #################### */
+    header div.logo {
+        font-size: 28px;
+        font-weight: 500;
+        flex: 1;
+    }
+
+    header div.mobileMenu {
+        position: relative;
+    }
+
+    header div.mobileMenu ul {
+        list-style: none;
+        font-size: 16px;
+        font-weight: 300;
+        display: none;
+        text-transform: uppercase;
+        /* position: absolute; */
+    }
+
+    header a {
+        display: block;
+        color: white;
+    }
+
+    .overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        /* Black fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/opacity */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        /* 25% from the top */
+        width: 100%;
+        /* 100% width */
+        text-align: center;
+        /* Centered text/links */
+        margin-top: 30px;
+        /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        /* Display block instead of inline */
+        transition: 0.3s;
+        /* Transition effects on hover (color) */
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        font-size: 40px;
+    }
+
+    /* #################### Jumbotron #################### */
+    div.jumbotron {
+        margin: 0;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+    }
+
+    div.jumbotron .textDetail {
+        width: 100%;
+    }
+
+    div.jumbotron .textDetail h1 {
+        font-size: 36px;
+        font-weight: 600;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    div.jumbotron .textDetail p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    div.jumbotron .textDetail input {
+        font-size: 20px;
+        font-weight: 400;
+        height: 50px;
+        width: 100%;
+        text-transform: uppercase;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        background-color: #11519c;
+    }
+
+    div.jumbotron div.consultation {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ededed;
+        color: white;
+    }
+
+    div.jumbotron div.consultation div {
+        height: 50px;
+        background-color: #11519c;
+    }
+
+    div.jumbotron div.consultation div h2 {
+        margin-top: 12px;
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    div.jumbotron div.consultation form {
+        display: flex;
+        /* height: 520px; */
+        margin: 5px 10px;
+        flex-direction: column;
+    }
+
+    div.jumbotron div.consultation form input,
+    select {
+        margin: 5px 0;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    div.jumbotron div.consultation form input,
+    select::placeholder,
+    select {
+        padding-left: 10px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    div.jumbotron div.consultation form div.checkbox {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+
+    div.jumbotron div.consultation form div.checkbox label {
+        margin: 10px;
+        color: #c4c4c4;
+        font-size: 12px;
+    }
+
+    div.jumbotron div.consultation form input[type="submit"] {
+        font-size: 16px;
+        font-weight: 500;
+        color: #11519c;
+        border: 1px solid #11519c;
+        text-transform: uppercase;
+    }
+
+    /* #################### Main #################### */
+    main {
+        margin: 100px 0;
+        padding: 0;
+        color: black;
+    }
+
+    main h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #11519c;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    main h2::after {
+        content: "";
+        height: 2px;
+        width: 60px;
+        background-color: #11519c;
+        position: relative;
+        top: 15px;
+    }
+
+    main div.contents {
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    main div.contents div.buttons span {
+        width: 100%;
+        height: 65px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: relative;
+        border: 2px solid #11519c;
+        background-color: #e0e0e0;
+        background-image: url(./img//Shape\ 1.png);
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    main div.contents div.buttons span:nth-child(2) {
+        background-color: #11519c;
+        color: white;
+    }
+
+    main div.contents div.details {
+        padding-left: 0px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    main div.contents div.details p {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    main div.contents div.details a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #11519c;
+    }
+}
